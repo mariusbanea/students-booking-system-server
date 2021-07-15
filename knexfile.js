@@ -6,6 +6,8 @@
 
 require('dotenv').config();
 const path = require("path");
+const pg = require('pg');
+pg.defaults.ssl = process.env.NODE_ENV === "production" ? { rejectUnauthorized: false } : false;
 
 const {
     DATABASE_URL = "postgresql://postgres@localhost/postgres",
