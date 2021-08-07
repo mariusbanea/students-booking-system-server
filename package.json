@@ -1,12 +1,11 @@
 {
-    "name": "starter-restaurant-reservation-back-end",
-    "version": "1.0.0",
-    "description": "Starter code for restaurant reservation backend",
+    "name": "mentoring-student-system-back-end",
+    "version": "3.1.0",
+    "description": "Mentoring student system backend",
     "main": "src/server.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Thinkful-Ed/starter-restaurant-reservation",
-        "directory": "/back-end"
+        "url": "https://github.com/mariusbanea/students-booking-system-server"
     },
     "scripts": {
         "start": "node src/server.js",
@@ -31,6 +30,7 @@
         "cors": "^2.8.5",
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
+        "fast-json-stable-stringify": "^2.1.0",
         "knex": "^0.21.12",
         "nanoid": "^3.1.20",
         "npm-run-all": "^4.1.5",
@@ -45,6 +45,6 @@
         "supertest": "^6.1.1"
     },
     "engines": {
-        "node": "14.x"
+        "node": "15.x"
     }
 }

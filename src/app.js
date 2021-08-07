@@ -7,16 +7,16 @@ const cors = require("cors");
 
 const errorHandler = require("./errors/errorHandler");
 const notFound = require("./errors/notFound");
-const reservationsRouter = require("./reservations/reservations.router");
-const tablesRouter = require("./tables/tables.router");
+const studentsRouter = require("./students/students.router");
+const coursesRouter = require("./courses/courses.router");
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.use("/reservations", reservationsRouter);
-app.use("/tables", tablesRouter);
+app.use("/students", studentsRouter);
+app.use("/courses", coursesRouter);
 
 app.use(notFound);
 app.use(errorHandler);
